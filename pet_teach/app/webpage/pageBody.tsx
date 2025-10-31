@@ -1,4 +1,8 @@
 
+"use client"
+
+import Link from "next/link";
+
 type CardObject = {
     image: string;
     name: string;
@@ -101,6 +105,12 @@ function LearningSection() {
                         <Card key={idx} image={petCareBasic.image} name={petCareBasic.name}/>
                     ))
                 }
+            </div>
+            
+            <div className="flex flex-col justify-center items-center mt-10">
+                <Link href="./petBasics">
+                    <button className="border rounded-md bg-blue-300 px-5 py-3 cursor-pointer hover:bg-blue-400">Learn More</button>
+                </Link>
             </div>
         </div>
     );

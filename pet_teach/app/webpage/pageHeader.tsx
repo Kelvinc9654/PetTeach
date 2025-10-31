@@ -1,6 +1,8 @@
 
 "use client"
 
+import Link from "next/link"
+
 function Banner() {
     return (
         <div className="relative w-full">
@@ -18,13 +20,15 @@ function Banner() {
     )
 }
 
-function NavigationBar() {
+export function NavigationBar() {
     return (
         <header className="top-0 h-20 left-0 w-full max-h-48">
             <div className="flex flex-row items-center justify-between px-6 py-4 space-x-2">
                 {/* logo */}
                 <div>
-                    <img src="/images/logo.png" className="h-12 scale-200 w-auto object-contain"/>
+                    <Link href="/">
+                        <img src="/images/logo.png" className="h-12 scale-200 w-auto object-contain cursor-pointer"/>
+                    </Link>
                 </div>
 
                 {/* navigation */}
@@ -48,12 +52,17 @@ function NavigationBar() {
 
                 {/* buttons */}
                 <div className="flex flex-row items-center">
-                    <button className="ml-6 bg-red-600 text-white font-bold rounded-full px-5 py-2 hover:bg-red-700 cursor-pointer">
-                        Log in
-                    </button>
-                    <button className="ml-6 bg-red-600 text-white font-bold rounded-full px-5 py-2 hover:bg-red-700 cursor-pointer">
-                        Sign up
-                    </button>
+                    <Link href="/userAuth/login">
+                         <button className="ml-6 bg-red-600 text-white font-bold rounded-full px-5 py-2 hover:bg-red-700 cursor-pointer">
+                            Log in
+                        </button>
+                    </Link>
+
+                    <Link href="/userAuth/signup">
+                        <button className="ml-6 bg-red-600 text-white font-bold rounded-full px-5 py-2 hover:bg-red-700 cursor-pointer">
+                            Sign up
+                        </button>
+                    </Link>
                 </div>
             </div>
         </header>
