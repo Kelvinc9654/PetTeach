@@ -12,7 +12,7 @@ function PageInfo() {
     return (
         <div className="flex flex-col py-15 space-y-15">
             <div className="text-center mx-5" id="about">
-                <h1 className="text-4xl font-bold mb-3">About</h1>
+                <h1 className="text-4xl font-bold mb-3 text-black">About</h1>
                 <p className="text-lg text-gray-700">
                     Regardless of the type of animal, we at Pet Teach believe that each of them deserves
                     to be loved. Our goal is to help people be more confident about being future or a better 
@@ -25,7 +25,7 @@ function PageInfo() {
             </div>
 
             <div className="text-center">
-                <h1 className="text-4xl font-bold">Mission</h1>
+                <h1 className="text-4xl font-bold text-black">Mission</h1>
                 <p className="text-lg text-gray-700">
                     Our mission is to make pet education free and reliable for everyone so that they make
                     better decisions on how best to take care of their pets
@@ -46,7 +46,7 @@ function Card({ image, name }: CardObject) {
             </div>
 
             <div className="w-full text-center mb-10">
-                <p className="text-lg font-semibold">{name}</p>
+                <p className="text-lg font-semibold text-gray-700">{name}</p>
             </div>
         </div>
     );
@@ -67,8 +67,8 @@ function AnimalCategories() {
         <div className="py-15" id="animals">
             <div>
                 <div className="text-center mb-12 space-y-3">
-                    <h1 className="text-3xl font-bold">Animal Categories</h1>
-                    <h2 className="text-sm">Explore the types of animals that we could help you with</h2>
+                    <h1 className="text-3xl font-bold text-black">Animal Categories</h1>
+                    <h2 className="text-sm text-gray-700">Explore the types of animals that we could help you with</h2>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mx-5">
@@ -96,7 +96,7 @@ function LearningSection() {
     return (
         <div className="py-15 bg-gray-50" id="pet-basics">
             <div className="text-center mb-10">
-                <h1 className="text-4xl font-bold ">Pet Care Basics</h1>
+                <h1 className="text-4xl font-bold text-black">Pet Care Basics</h1>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
