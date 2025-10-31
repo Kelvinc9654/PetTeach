@@ -22,7 +22,7 @@ function Banner() {
 
 export function NavigationBar() {
     return (
-        <header className="top-0 h-20 left-0 w-full max-h-48">
+        <header className="top-0 h-20 left-0 w-full max-h-48 shadow-md">
             <div className="flex flex-row items-center justify-between px-6 py-4 space-x-2">
                 {/* logo */}
                 <div>

@@ -3,7 +3,8 @@ import { NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
 
 
-export async function Fetch(contentQuestion: string) {
+export async function FetchData(contentQuestion: string) {
+
     const geminiAI = new GoogleGenAI({
         apiKey: process.env.GEMINI_API_KEY
     });
@@ -12,6 +13,4 @@ export async function Fetch(contentQuestion: string) {
         model: "gemini-2.5-flash",
         contents: contentQuestion,
     });
-
-    return response.text;
 }
