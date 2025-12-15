@@ -4,7 +4,7 @@
 import { NavigationBar } from "../webpage/pageHeader";
 import ChatBot from "../chatBot/chatbot";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 
@@ -117,7 +117,7 @@ function Border({sectionHeader, children}: BorderProp) {
     );
 }
 
-export default function AnimalGuide() {
+function AnimalGuideContent() {
     const [data, setData] = useState<AdviceSchema | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [displayChatBot, setDisplayChatBot] = useState<boolean>(false);
@@ -160,7 +160,6 @@ export default function AnimalGuide() {
 
     return (
         <>
-            <NavigationBar/>
             {loading ? 
                 <p>Loading Information. Please be patient.</p> 
                 : ""
@@ -250,6 +249,17 @@ export default function AnimalGuide() {
                     <ChatBot/>
                 </div>
             }
+        </>
+    );
+}
+
+export default function AnimalGuide() {
+    return (
+        <>
+            <NavigationBar/>
+            <Suspense fallback={<p>Loading Guide.Please be patient</p>}>
+                <AnimalGuideContent/>
+            </Suspense>
         </>
     );
 }
