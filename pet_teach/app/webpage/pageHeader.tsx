@@ -13,7 +13,11 @@ function Banner() {
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white font-bold space-y-3">
                 <h1 className="text-4xl">Pet Teach</h1>
                 <p className="text-lg mt-3">Best place to learn how to take care of your pets</p>
-                <button className="bg-blue-600 hover:bg-blue-700 rounded-md px-8 py-3 mt-5 cursor-pointer">Explore Now</button>
+                <Link href="/animals">
+                    <button className="bg-blue-600 hover:bg-blue-700 rounded-md px-8 py-3 mt-5 cursor-pointer">
+                        Explore Now
+                    </button>
+                </Link>
             </div>
 
         </div>

@@ -1,0 +1,159 @@
+
+
+[
+  {
+    "name": "Golden Retriever",
+    "category": "Dogs",
+    "image": "/images/dogs/golden_retriever.webp"
+  },
+  {
+    "name": "German Shepherd",
+    "category": "Dogs",
+    "image": "/images/dogs/german_shepherd.webp"
+  },
+  {
+    "name": "Pomeranian",
+    "category": "Dogs",
+    "image": "/images/dogs/pomeranian.webp"
+  },
+  {
+    "name": "Labrador Retriever",
+    "category": "Dogs",
+    "image": "/images/dogs/labrador.webp"
+  },
+  {
+    "name": "Poodle",
+    "category": "Dogs",
+    "image": "/images/dogs/poodle.webp"
+  },
+
+  {
+    "name": "Siamese Cat",
+    "category": "Cats",
+    "image": "/images/cats/siamese.webp"
+  },
+  {
+    "name": "Persian Cat",
+    "category": "Cats",
+    "image": "/images/cats/persian.webp"
+  },
+  {
+    "name": "Maine Coon",
+    "category": "Cats",
+    "image": "/images/cats/maine_coon.webp"
+  },
+  {
+    "name": "Bengal Cat",
+    "category": "Cats",
+    "image": "/images/cats/bengal.webp"
+  },
+  {
+    "name": "Sphynx Cat",
+    "category": "Cats",
+    "image": "/images/cats/sphynx.webp"
+  },
+
+  {
+    "name": "Parakeet",
+    "category": "Birds",
+    "image": "/images/birds/parakeet.webp"
+  },
+  {
+    "name": "Canary",
+    "category": "Birds",
+    "image": "/images/birds/canary.webp"
+  },
+  {
+    "name": "Cockatiel",
+    "category": "Birds",
+    "image": "/images/birds/cockatiel.webp"
+  },
+  {
+    "name": "Lovebird",
+    "category": "Birds",
+    "image": "/images/birds/lovebird.webp"
+  },
+  {
+    "name": "Finch",
+    "category": "Birds",
+    "image": "/images/birds/finch.webp"
+  },
+
+  {
+    "name": "Goldfish",
+    "category": "Fish",
+    "image": "/images/fish/goldfish.webp"
+  },
+  {
+    "name": "Betta Fish",
+    "category": "Fish",
+    "image": "/images/fish/betta.webp"
+  },
+  {
+    "name": "Guppy",
+    "category": "Fish",
+    "image": "/images/fish/guppy.webp"
+  },
+  {
+    "name": "Molly Fish",
+    "category": "Fish",
+    "image": "/images/fish/molly.webp"
+  },
+  {
+    "name": "Platy Fish",
+    "category": "Fish",
+    "image": "/images/fish/platy.webp"
+  },
+
+  {
+    "name": "Leopard Gecko",
+    "category": "Reptiles",
+    "image": "/images/reptiles/leopard_gecko.webp"
+  },
+  {
+    "name": "Ball Python",
+    "category": "Reptiles",
+    "image": "/images/reptiles/ball_python.webp"
+  },
+  {
+    "name": "Bearded Dragon",
+    "category": "Reptiles",
+    "image": "/images/reptiles/bearded_dragon.webp"
+  },
+  {
+    "name": "Corn Snake",
+    "category": "Reptiles",
+    "image": "/images/reptiles/corn_snake.webp"
+  },
+  {
+    "name": "Crested Gecko",
+    "category": "Reptiles",
+    "image": "/images/reptiles/crested_gecko.webp"
+  },
+
+  {
+    "name": "Hamster",
+    "category": "Rodents",
+    "image": "/images/rodents/hamster.webp"
+  },
+  {
+    "name": "Guinea Pig",
+    "category": "Rodents",
+    "image": "/images/rodents/guinea_pig.webp"
+  },
+  {
+    "name": "Mouse",
+    "category": "Rodents",
+    "image": "/images/rodents/mouse.webp"
+  },
+  {
+    "name": "Rat",
+    "category": "Rodents",
+    "image": "/images/rodents/rat.webp"
+  },
+  {
+    "name": "Chinchilla",
+    "category": "Rodents",
+    "image": "/images/rodents/chinchilla.webp"
+  }
+]
