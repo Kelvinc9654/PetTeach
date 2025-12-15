@@ -1,5 +1,5 @@
 
-"use client"
+"use client";
 
 import { NavigationBar } from "../webpage/pageHeader";
 import ChatBot from "../chatBot/chatbot";
