@@ -27,7 +27,7 @@ function Banner() {
 export function NavigationBar() {
     return (
         <header className="top-0 h-20 left-0 w-full max-h-48 shadow-md">
-            <div className="flex flex-row items-center justify-between px-6 py-4 space-x-2">
+            <div className="flex flex-row items-center px-6 py-4 space-x-2">
                 {/* logo */}
                 <div>
                     <Link href="/">
@@ -36,7 +36,7 @@ export function NavigationBar() {
                 </div>
 
                 {/* navigation */}
-                <ul className="hidden items-center space-x-8 font-medium md:flex md:flex-row">
+                <ul className="hidden items-center space-x-8 font-medium md:flex md:flex-row mx-auto">
                     <li>
                         <a href="#home" className="hover:text-red-600 hover:underline">Home</a>
                     </li>
@@ -52,22 +52,7 @@ export function NavigationBar() {
                     <li>
                         <a href="#contact" className="hover:text-red-600 hover:underline">Contact</a>
                     </li>
-                </ul>
-
-                {/* buttons */}
-                <div className="flex flex-row items-center">
-                    <Link href="/userAuth/login">
-                         <button className="ml-6 bg-red-600 text-white font-bold rounded-full px-5 py-2 hover:bg-red-700 cursor-pointer">
-                            Log in
-                        </button>
-                    </Link>
-
-                    <Link href="/userAuth/signup">
-                        <button className="ml-6 bg-red-600 text-white font-bold rounded-full px-5 py-2 hover:bg-red-700 cursor-pointer">
-                            Sign up
-                        </button>
-                    </Link>
-                </div>
+                </ul>          
             </div>
         </header>
     )
