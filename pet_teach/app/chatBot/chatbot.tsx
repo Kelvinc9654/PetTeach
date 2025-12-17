@@ -23,12 +23,14 @@ export default function ChatBot() {
         setIsLoading(true);
 
         try {
+
+            const prompt = `${userMessage}. Please send a valid json file`;
             const response = await fetch(`/api/geminiAPI`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ prompt: userMessage })
+                body: JSON.stringify({ prompt: prompt })
             });
 
             if(!response.ok) {
