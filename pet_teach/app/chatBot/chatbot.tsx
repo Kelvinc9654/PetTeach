@@ -9,6 +9,23 @@ type ChatMessage = {
     content: string;
 }
 
+function getPrompt(userMessage: string) {
+    const prompt = `
+        Respond ONLY with a valid JSON. Do not include markdown or codeblocks or other
+        uncessary things.
+
+        The JSON must follow this structure:
+        {
+            "reply": string
+        }
+
+        User message:
+        "${userMessage}
+    `;
+
+    return prompt;
+}
+
 export default function ChatBot() {
     const [chatHistory, setChatHistory] = useState<ChatMessage[]>([]);
     const [userMessage, setUserMessage] = useState<string>("");
@@ -22,9 +39,9 @@ export default function ChatBot() {
         setUserMessage("");
         setIsLoading(true);
 
-        try {
+        const prompt = getPrompt(userMessage);
 
-            const prompt = `${userMessage}. Please send a valid json file`;
+        try {
             const response = await fetch(`/api/geminiAPI`, {
                 method: "POST",
                 headers: {
@@ -38,7 +55,8 @@ export default function ChatBot() {
             }
 
             const data = await response.json();
-            const botMessage: ChatMessage = {role: "bot", content: data.text}
+            console.log("bot response", data)
+            const botMessage: ChatMessage = {role: "bot", content: data.reply}
             setChatHistory((prevChatHistory) => [...prevChatHistory, botMessage]);
         } catch (err) {
             console.error("Error fetching gemini response", err);
